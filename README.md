@@ -21,7 +21,7 @@ Because of this correction step, **this sctipt is not used for whole‐read erro
 
 ---
 
-###  1.2 Running the script
+###  1.2 Usage
 Run the following commands in your terminal:
 
 ```bash
