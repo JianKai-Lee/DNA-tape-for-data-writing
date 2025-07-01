@@ -2,7 +2,7 @@
 
 ## `1. block_replacement`
 
-`block_replacement.sh` filters and cleans raw nanopore FASTQ reads, **retaining only sequences that satisfy the project’s coding rules**.  
+`block_replacement.sh` filters and cleans raw nanopore FASTQ reads, **retaining only sequences that satisfy the designed coding rules**.  
 It automatically
 
 * detects **odd/even structural blocks** and the **payload** in every read;
