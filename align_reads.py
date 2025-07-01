@@ -77,7 +77,7 @@ def write_statistics(output_dir, input_count):
             stats_handle.write("Check: Warning! Repetitions or omissions found.\n")
 
 def main():
-    fasta_file = "RefGene_4mers_All.fasta"  # Replace with your input reference file
+    fasta_file = "ref.fasta"  # Replace with your input reference file
     fastq_file = "B4.fastq"  # Replace with your input Bk.fastq file
     output_dir = "output"  # Output folder name
 
