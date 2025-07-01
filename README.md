@@ -13,7 +13,7 @@ Because of this correction step, **this sctipt is not used for whole‐read erro
 
 ---
 
-###  1.1 Preparing the input
+###  1.1 Preparing the inputs
 
 1. **Rename** the sequencing FASTQ file to `merged.fastq`
 
@@ -46,4 +46,30 @@ python3 length_filter.py
 ```
 Running the command inside the working directory will generate one file per unique payload length (e.g., B21.fastq, B25.fastq, …).
 
+---
+
+## `3. align_reads`
+
+For **each payload-length group** (every `Bk.fastq`), `align_reads.py` is run in its **own working folder**.  
+The script aligns the reads to a length-matched reference library and decodes the block by counting perfect matches.
+
+---
+
+### 3.1 Preparing the inputs
+
+1. Create a separate directory for the given `k`, and place **all three files** inside it:
+* `align_reads.py` 
+* `Bk.fastq` — all reads whose payload length equals `k`  
+* `ref.fasta` — every valid payload permutation for length `k`
+
+2. Open `align_reads.py` and make sure the filenames inside the script match your actual filenames (rename or edit as needed).
+
+---
+
+### 3.2 Usage
+
+```bash
+python3 align_reads.py
+```
+The script outputs a decoded results file (e.g., decode_k.txt) plus summary statistics for that block length.
 
