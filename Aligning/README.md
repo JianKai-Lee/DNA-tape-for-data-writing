@@ -9,7 +9,7 @@ It automatically
 * corrects any errors located in those structural blocks,
 
 so that **all remaining sequencing errors reside solely in the payload region**.  
-Because of this correction step, **this sctipt is not used for whole‐read error-rate statistics**.
+Because of this correction step, **this script is not used for whole‐read error-rate statistics**.
 
 ---
 
